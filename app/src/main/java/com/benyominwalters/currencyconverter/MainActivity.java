@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         TextView amount = (TextView) findViewById(R.id.amountEditText);
         Double convertedAmount = Double.valueOf(amount.getText().toString()) * 3.63;
 
-        Toast.makeText(MainActivity.this, convertedAmount.toString() + " Shekels", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, String.format("%.2f", convertedAmount) + " Shekels", Toast.LENGTH_LONG).show();
 
     }
 
